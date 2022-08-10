@@ -65,6 +65,9 @@
     }
     .screens-3d img, .register-img img, .features-img img, .works-img img {
         width: 284px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
     .features-row {
         display: block;
@@ -214,6 +217,9 @@
     }
     .works-img img {
         width: 550px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
     .fdb-row {
         display: block;
@@ -303,6 +309,9 @@
     }
     .works-img img {
         width: 800px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
     .testimonials {
         padding: 0px 50px 50px 0;
@@ -346,7 +355,7 @@
         width: 550px;
     }
     .features-row {
-        padding: 0px 30px;
+        padding: 0px 30px 0px 75px;
     }
     .register-img img {
         width: 620px;
@@ -362,6 +371,9 @@
     }
     .works-img img {
         width: 890px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
     .testimonials {
         padding: 0px 20px 50px 0px;
@@ -397,7 +409,7 @@
         margin: 100px 50px;
     }
     .features-row {
-        padding: 50px;
+        padding: 0 50px 0 70px;
     }
     .register-img img {
         width: 720px;
@@ -407,6 +419,9 @@
     }
     .works-img img {
         width: 980px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
     .testimonials {
         padding: 0px 95px 50px 0px;
