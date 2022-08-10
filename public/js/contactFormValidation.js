@@ -4,16 +4,9 @@ function validateName() {
     var valid = true;
 
     if(name.length == 0) {
-      producePrompt('Името е задължително', 'name-error' , 'red')
+      producePrompt('Моля, попълнете Вашето име', 'name-error' , 'red')
       return false;
   }
-// If First and Last names are required
-
-//   if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-//       producePrompt('Име и фамилия моля.','name-error', 'red');
-//       return false;
-//   }
-
   producePrompt(' ', 'name-error', 'green');
   return valid;
 }
@@ -24,7 +17,7 @@ function validatePhone() {
     var valid = true;
   
     if(phone.length == 0) {
-        producePrompt('Телефонния номер е задължителен.', 'phone-error', 'red');
+        producePrompt('Моля, въведете вашият телефонен номер', 'phone-error', 'red');
         return false;
     }
   
@@ -78,7 +71,7 @@ function validatePhone() {
     if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
       jsShow('submit-error');
       producePrompt('Моля попълнете липсващата информация', 'submit-error', 'red');
-      setTimeout(function(){jsHide('submit-error');}, 2000);
+      setTimeout(function(){jsHide('submit-error');}, 3000);
       return false;
   }
   else {
@@ -95,6 +88,6 @@ function validatePhone() {
     document.getElementById(promptLocation).style.color = color; 
   }
 
-  document.querySelector("form").reset();
+  // document.querySelector("form").reset();
 
 
