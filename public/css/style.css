@@ -241,6 +241,11 @@ svg:hover #lineTwo {
     flex-basis: 60%;
     position: relative;
 }
+.screens-3d img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .features-row {
     display: flex;
     align-content: space-between;
@@ -256,7 +261,7 @@ svg:hover #lineTwo {
     flex-basis: 40%;
     position: relative;
     margin: auto;
-    padding-top: 14px;
+    padding-top: 50px;
 }
 .register-txt h5, .features-txt h5 {
     color:#E68200;

@@ -459,10 +459,16 @@
 }
 @media only screen and (min-width: 1451px) {
     .screens-cont {
-        margin: 100px 50px 100px 100px;
+        margin: 100px 50px 100px 200px;
     }
     .features-row {
-        padding: 0 50px 0 100px;
+        padding: 0 100px 0 200px;
+    }
+    .fdb-row .tstm-left-col p {
+        padding: 30px 170px;
+    }
+    .features-row .register-txt {
+        padding-top: 100px;
     }
 }
 
