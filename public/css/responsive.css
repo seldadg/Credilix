@@ -449,5 +449,22 @@
 
 }
 
+@media only screen and (min-width: 1351px) and (max-width: 1450px) {
+    .screens-cont {
+        margin: 100px 50px 100px 100px;
+    }
+    .features-row {
+        padding: 0 50px 0 70px;
+    }
+}
+@media only screen and (min-width: 1451px) {
+    .screens-cont {
+        margin: 100px 50px 100px 100px;
+    }
+    .features-row {
+        padding: 0 50px 0 100px;
+    }
+}
+
 
 
