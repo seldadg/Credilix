@@ -278,6 +278,8 @@ svg:hover #lineTwo {
 .features-row .features-img {
     flex-basis: 70%;
     position: relative;
+}
+.features-row .features-img img {
     display: block;
     margin-left: auto;
     margin-right: auto;
