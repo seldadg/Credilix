@@ -1,0 +1,438 @@
+@media all and (max-width:640px){
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p, button, a {
+        font-size: 15px;
+    }
+    ul, li {
+        font-size: 15px;
+    }
+    .navbar .container-logo .logo{
+        width: 120px;
+        padding-top: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        position: relative;
+    }
+    .navbar .container-logo {
+        width: 100%;
+    }
+    .menu {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .navi-list {
+        list-style-type: none;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .navi-list .list-item {
+        display: block;
+        border-top: 1px solid #ffffff;
+    }
+    .active {
+        display: block;
+    }
+    .banner {
+        display: block;
+    }
+    .banner .banner-left {
+        margin: 30px;
+    }
+    .banner .banner-left h4 {
+        margin: 20px 0;
+    }
+    .banner .banner-left .buttons {
+        margin: 30px 0;
+    }
+    .screens-cont {
+        display: block;
+        margin: 20px;
+    }
+    .custom-txt {
+        font-size: 38px;
+    }
+    .screens-3d img, .register-img img, .features-img img, .works-img img {
+        width: 284px;
+    }
+    .features-row {
+        display: block;
+        padding: 0px 0px 0px 20px;
+    }
+    .features-row .register-txt, .features-row .features-txt {
+        margin: 0 20px;
+    }
+    svg#play {
+        width: 65px;
+        margin: 50px 30px;
+    }
+    .benefits {
+        margin: 50px 30px;
+    }
+    .benefits .benef-title-txt {
+        margin: 30px 10px;
+    }
+    .benefit-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+        padding: 20px 10px;
+    }
+    .how-it-works {
+        margin: 0px 20px;
+    }
+    .how-it-works .works-txt {
+        padding: 30px 20px;
+    }
+    .testimonials {
+        padding: 0;
+    }
+    .fdb-row {
+        display: block;
+    }
+    .fdb-row .tstm-left-col {
+        padding: 70px 30px 30px 30px;
+    }
+    .fdb-row .feedback {
+        padding: 0 20px;
+    }
+    .fdb-1, .fdb-2 {
+        width: 285px;
+        float: none;
+    }
+    .fdb-row .tstm-left-col p {
+        padding: 30px;
+    }
+    .partner-row {
+        margin: 30px 20px;
+    }
+    .partner-row .clients .clients-row {
+        margin: 30px 20px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+    .team {
+        margin: 50px 20px;
+    }
+    .about-us {
+        margin: 30px 20px;
+    }
+    .team-wrap {
+        margin: 30px;
+        display: block;
+    }
+    .person {
+        margin-bottom: 30px;
+    }
+    .clients-logo .era {
+        width: 65px;
+        height: 65px;
+    }
+    .clients-logo .credit-market {
+        width: 200px;
+    }
+    .clients-logo .host {
+        width: 170px;
+    }
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer .footer-right {
+        display: inline-block;
+        text-align: center;
+        margin: 25px auto;
+        width: auto;
+    }
+    .footer-right .footer-icons {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 840px) {
+    h1 {
+        font-size: 42px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    .banner .banner-left {
+        margin: 30px;
+    }
+    .screens-cont {
+        margin: 50px 20px 50px 30px;
+    }
+    .custom-txt {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .screens-3d img {
+        width: 380px;
+    }
+    .features-row {
+        display: block;
+        padding: 50px 20px 0 20px;
+    }
+    .features-row .features-txt {
+        padding-top: 0px;
+    }
+    .features-row .register-img img {
+        width: 550px;
+    }
+    .features-row .features-img img {
+        width: 630px;
+    }
+    .benefits .benef-title-txt {
+        margin: 50px 50px;
+    }
+    .benefit-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .benefits {
+        margin: 50px;
+    }
+    .how-it-works {
+        margin: 0px 50px;
+    }
+    .how-it-works .works-txt {
+        text-align: center;
+        padding: 30px 50px;
+    }
+    .works-img img {
+        width: 550px;
+    }
+    .fdb-row {
+        display: block;
+    }
+    .fdb-row .tstm-left-col {
+        padding: 80px 30px 50px 30px;
+    }
+    .fdb-1, .fdb-2 {
+        width: 380px;
+    }
+    .partner-row {
+        margin: 50px 0px;
+    }
+    .partner-row .clients .clients-row {
+        margin: 50px 20px;
+        column-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+    .team {
+        margin: 100px 20px;
+    }
+    .about-us {
+        margin: 50px 50px;
+    }
+    .team-wrap {
+        margin: 50px 100px;
+    }
+
+   .buttons {
+    display: block;
+   }
+   .demo-btn, .learn-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    
+   }
+
+   .footer {
+    font: bold 14px sans-serif;
+   }
+    .footer .footer-left, .footer .footer-center, .footer .footer-right {
+       display: block;
+       /* width: 100%; */
+       margin-bottom: 40px;
+       text-align: center;
+    }
+    .footer .footer-center i {
+       margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 841px) and (max-width: 992px) {
+    h1 {
+       font-size: 46px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    .demo-btn {
+        padding: 10px;
+    }
+    .screens-cont {
+        margin: 50px 30px;
+    }
+    .screens-3d img {
+        width: 480px;
+    }
+    .features-row {
+        display: block;
+        padding: 50px 30px 0 50px;
+    }
+    .register-img img, .features-img img {
+        width: 700px;
+    }
+    .features-row .features-txt {
+        padding-top: 0px;
+    }
+    .benefits {
+        margin: 50px 0px;
+    }
+    .how-it-works {
+        margin: 50px 0px;
+    }
+    .works-img img {
+        width: 800px;
+    }
+    .testimonials {
+        padding: 0px 50px 50px 0;
+    }
+    .fdb-row {
+        display: block;
+    }
+    .partner-row .clients .clients-row {
+        margin: 100px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+    .team {
+        margin: 50px 0px;
+    }
+    .about-us {
+        margin: 50px 70px;
+    }
+    .team-wrap {
+        margin: 50px 100px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    h1 {
+        font-size: 58px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    .banner .banner-left{
+        margin-left: 50px;
+    }
+    .screens-cont {
+        margin: 100px 50px;
+    }
+    .screens-3d img {
+        width: 550px;
+    }
+    .features-row {
+        padding: 0px 30px;
+    }
+    .register-img img {
+        width: 620px;
+    }
+    .features-img img {
+        width: 660px;
+    }
+    .benefits {
+        margin: 100px 50px;
+    }
+    .how-it-works {
+        margin: 0px 50px;
+    }
+    .works-img img {
+        width: 890px;
+    }
+    .testimonials {
+        padding: 0px 20px 50px 0px;
+    }
+    .fdb-row .tstm-left-col {
+        padding: 70px 0px;
+    }
+    .fdb-1, .fdb-2 {
+        width: 392px;
+    }
+    .partner-row {
+        margin: 100px 0px;
+    }
+    .partner-row .clients .clients-row {
+        margin: 100px 0px;
+    }
+    .about-us {
+        text-align: center;
+        margin: 50px 30px;
+    }
+    .team {
+        margin: 0px 100px;
+    }
+    .team-wrap {
+        margin: 50px 120px;
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1350px) {
+    h2 {
+        font-size: 44px;
+    }
+    .screens-cont {
+        margin: 100px 50px;
+    }
+    .features-row {
+        padding: 50px;
+    }
+    .register-img img {
+        width: 720px;
+    }
+    .features-img img {
+        width: 770px;
+    }
+    .works-img img {
+        width: 980px;
+    }
+    .testimonials {
+        padding: 0px 95px 50px 0px;
+    }
+    .fdb-row .tstm-left-col {
+        padding: 100px 80px;
+    }
+    .fdb-row .tstm-left-col p {
+        padding: 30px 0px;
+    }
+    .partner-row {
+        text-align: center;
+        margin: 100px 0px 50px 0px;
+    }
+    .partner-row .clients .clients-row {
+        margin: 100px 90px;
+    }
+    .about-us {
+        text-align: center;
+        margin: 50px 100px 30px;
+    }
+    .team-wrap {
+        margin: 50px 180px;
+    }
+
+}
+
+
+
