@@ -12,12 +12,17 @@ app.set('view engine', 'handlebars');
 
 // Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
+// app.set('/views', express.static(path.join(__dirname, 'views')));
+app.set('views', __dirname + '/views');
 
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
+  res.render('index');
+});
+app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
@@ -36,7 +41,7 @@ app.post('/send', (req, res) => {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: 'info@credilix.com',
+    host: 'cp2.host2.bg',
     port: 587,
     secure: false, // true for 465, false for other ports
     security: STARTTLS,

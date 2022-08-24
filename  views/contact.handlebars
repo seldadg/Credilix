@@ -39,25 +39,25 @@
           <form method="POST" action="send"></form>
           <div class="form-group">
             <label for="contact-name"></label>
-            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Имена" onkeyup='validateName()'>
+            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Имена" onkeyup=validateName()>
             <span class='error-message' id='name-error'></span>
         </div>
     
         <div class="form-group">
             <label for="contact-phone"></label>
-            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Телефон за връзка" onkeyup='validatePhone()'>
+            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Телефон за връзка" onkeyup=validatePhone()>
             <span class='error-message' id='phone-error'></span>
         </div>
     
         <div class="form-group">
             <label for="contact-email"></label>
-            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Емайл" onkeyup='validateEmail()'>
+            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Емайл" onkeyup=validateEmail()>
             <span class='error-message' id='email-error'></span>
         </div>   
     
         <div class="form-group">
             <label for='contactMessage'></label>
-            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Вашето съобщение" onkeyup='validateMessage()'></textarea>
+            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Вашето съобщение" onkeyup=validateMessage()></textarea>
             <span class='error-message' id='message-error'></span>
         </div>
     

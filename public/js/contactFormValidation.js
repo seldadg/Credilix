@@ -21,7 +21,7 @@ function validatePhone() {
         return false;
     }
   
-    if(!phone.match(/^[0-9]{10}$/)) {
+    else if(!phone.match(/^[0-9]{10}$/)) {
         producePrompt('Телефонният номер трябва да започва с (08..) и да съдържа 10 цифрени символа' ,'phone-error', 'red');
         return false;
     }
@@ -31,7 +31,7 @@ function validatePhone() {
   }
 
   // Email validation
-  function validateEmail () {
+  function validateEmail() {
     var email = document.getElementById('contact-email').value;
     var valid = true;
   
@@ -88,6 +88,6 @@ function validatePhone() {
     document.getElementById(promptLocation).style.color = color; 
   }
 
-  // document.querySelector("form").reset();
+  document.querySelector("form").reset();
 
 
