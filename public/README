@@ -1,4 +1,24 @@
-Install Dependencies
-npm install 
-Run
-node index
+## Technologies
+* Node.js
+* Express
+* Nodemailer
+
+
+### Installation
+
+Install the dependencies
+
+```sh
+$ npm install express nodemailer
+```
+Run app
+
+```sh
+$ npm start
+```
+
+Server dev
+
+```sh
+$ nodemon index.js
+```

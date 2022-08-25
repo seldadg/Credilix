@@ -1,19 +1,26 @@
 {
   "name": "credilix",
   "version": "1.0.0",
-  "description": "Credilix landing page",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seldadg/credilix.git"
   },
   "keywords": [],
-  "author": "SA",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seldadg/credilix/issues"
+  },
+  "homepage": "https://github.com/seldadg/credilix#readme",
   "dependencies": {
-    "body-parser": "^1.20.0",
     "express": "^4.18.1",
-    "express-handlebars": "^3.1.0",
-    "node": "^16.17.0",
-    "nodemailer": "^4.7.0"
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.19"
   }
 }

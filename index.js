@@ -1,78 +1,66 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const exphbs = require('express-handlebars');
-const path = require('path');
 const nodemailer = require('nodemailer');
 
 const app = express();
 
-// View engine setup
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+const PORT = process.env.PORT || 3000;
 
-// Static folder
-app.use('/public', express.static(path.join(__dirname, 'public')));
-// app.set('/views', express.static(path.join(__dirname, 'views')));
-app.set('views', __dirname + '/views');
-
-// Body Parser Middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// Middleware
+app.use(express.static('public'));
+app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.render('index');
-});
-app.get('/contact', (req, res) => {
-  res.render('contact');
+  res.sendFile(__dirname + '/public/contact.html');
 });
 
-app.post('/send', (req, res) => {
+app.get('/', (req, res) => {
+  res.render(__dirname + '/public/index.html');
+});
+
+app.post('/', (req, res) => {
   const output = `
-    <p>You have a new contact request</p>
-    <h3>Contact Details</h3>
+    <p>Имате ново съобщение Credilix</p>
+    <h3>Детайли</h3>
     <ul>  
-      <li>Name: ${req.body.name}</li>
+      <li>Name: ${req.body.names}</li>
       <li>Phone: ${req.body.phone}</li>
       <li>Email: ${req.body.email}</li>
     </ul>
-    <h3>Message</h3>
+    <h3>Съобщение</h3>
     <p>${req.body.message}</p>
   `;
 
-  // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     host: 'cp2.host2.bg',
     port: 587,
     secure: false, // true for 465, false for other ports
-    security: STARTTLS,
+    // security: STARTTLS,
     auth: {
-        user: 'info@credilix.com', // generated ethereal user
-        pass: 'M9v8baoybc'  // generated ethereal password
+        user: 'info@credilix.com', 
+        pass: 'M9v8baoybc'
     },
-    tls:{
-      rejectUnauthorized:false
-    }
+    // tls:{
+    //   rejectUnauthorized:false
+    // }
   });
 
-  // setup email data with unicode symbols
-  let mailOptions = {
-      from: '"Nodemailer Contact" <your@email.com>', // sender address
-      to: 'RECEIVEREMAILS', // list of receivers
-      subject: 'Node Contact Request', // Subject line
-      text: 'Hello world?', // plain text body
-      html: output // html body
+  const mailOptions = {
+      from: req.body.email,
+      to: 'info@credilix.com',
+      subject: 'Ново съобщение',
+      message: req.body.message,
+      html: output 
   };
 
-  // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-          return console.log(error);
+          console.log(error);
+          res.send('error');
+      }else{
+        console.log('Message was sent: %s', info.response);   
+        res.send('success');
       }
-      console.log('Message sent: %s', info.messageId);   
-      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-      res.render('contact', {msg:'Email has been sent'});
   });
-  });
+});
 
-app.listen(3000, () => console.log('Server started...'));
+app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
