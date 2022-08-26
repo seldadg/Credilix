@@ -3,7 +3,7 @@
         font-size: 38px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 24px;
     }
     h4 {
         font-size: 20px;
@@ -21,6 +21,7 @@
     .navbar {
         flex-direction: column;
         position: relative;
+        padding: 30px 8%;
     }
     .navbar .container-logo {
         width: 100%;
@@ -30,6 +31,7 @@
         position: absolute;
         right: 20px;
         top: 20px;
+        background: #7571f9;
     }
     .navi-list {
         list-style-type: none;
@@ -40,6 +42,13 @@
     .navi-list .list-item {
         display: block;
         border-top: 1px solid #ffffff;
+    }
+    .navbar .list-item a {
+        background: none;
+        border-bottom: none;
+    }
+    .navbar .list-item a:hover {
+        border-bottom: none;
     }
     .active {
         display: block;
@@ -55,6 +64,12 @@
     }
     .banner .banner-left .buttons {
         margin: 30px 0;
+    }
+    .demo-btn, .learn-btn {
+        margin-top: 20px;
+    }
+    .learn-btn a, .demo-btn a {
+        padding: 8px 25px;
     }
     .screens-cont {
         display: block;
@@ -92,6 +107,13 @@
         margin: 0px;
         padding: 20px 10px;
     }
+    .benefit-box .each-box {
+        height: 200px;
+    }
+    .benefit-box .each-box .icon-div img {
+        width: 50px;
+        height: 55px;
+    }
     .how-it-works {
         margin: 0px 20px;
     }
@@ -111,8 +133,9 @@
         padding: 0 20px;
     }
     .fdb-1, .fdb-2 {
-        width: 285px;
+        width: auto;
         float: none;
+        margin: 20px auto;
     }
     .fdb-row .tstm-left-col p {
         padding: 30px;
@@ -126,17 +149,29 @@
         row-gap: 50px;
     }
     .team {
-        margin: 50px 20px;
+        margin: 50px 0px;
     }
     .about-us {
         margin: 30px 20px;
     }
     .team-wrap {
-        margin: 30px;
+        margin: auto;
         display: block;
     }
-    .person {
-        margin-bottom: 30px;
+    .person_1{
+        padding: 20px 30px 20px 0px;
+        margin: auto;
+        border-radius: 100px;
+    }
+    .person_2{
+        padding: 20px 0px 20px 10px;
+        margin: auto;
+        width: 280px;
+        margin-top: 25px;
+        border-radius: 100px;
+    }
+    .person_1 img, .person_2 img {
+        width: 94px;
     }
     .clients-logo .era {
         width: 65px;
@@ -147,6 +182,21 @@
     }
     .clients-logo .host {
         width: 170px;
+    }
+    .contact-info {
+        padding: 50px 20px 0 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-info .phone, .contact-info .email {
+        border-right: none;
+    }
+    .contact-info .phone, .contact-info .email, .contact-info .footer-icons {
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+    svg#play-youtube {
+        margin: 0px 20px 0px 0px;
     }
     .footer {
         grid-template-columns: repeat(1, 1fr);
@@ -160,10 +210,13 @@
     .footer-right .footer-icons {
         display: inline-block;
     }
+    .form-container {
+        padding: 100px 10px;
+    }
 
 }
 
-@media only screen and (min-width: 640px) and (max-width: 840px) {
+@media only screen and (min-width: 641px) and (max-width: 840px) {
     h1 {
         font-size: 42px;
     }
@@ -206,7 +259,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .benefits {
-        margin: 50px;
+        margin: 50px 0;
     }
     .how-it-works {
         margin: 0px 50px;
@@ -229,9 +282,10 @@
     }
     .fdb-1, .fdb-2 {
         width: 380px;
+        margin: 20px auto;
     }
     .partner-row {
-        margin: 50px 0px;
+        margin: 0px;
     }
     .partner-row .clients .clients-row {
         margin: 50px 20px;
@@ -240,24 +294,48 @@
         row-gap: 50px;
     }
     .team {
-        margin: 100px 20px;
+        margin: 50px 0px;
     }
     .about-us {
         margin: 50px 50px;
     }
     .team-wrap {
-        margin: 50px 100px;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
     }
-
+    .person_1{
+        padding: 20px 30px 20px 0px;
+        margin: auto;
+    }
+    .person_2{
+        padding: 20px 10px 20px 10px;
+        width: 300px;
+        margin: auto;
+    }
+    .person_1 img, .person_2 img {
+        width: 94px;
+    }
+    .contact-info {
+        padding: 50px 10px 0 10px;
+    }
+    .contact-info .phone, .contact-info .email {
+        border-right: none;
+    }
+    .contact-info .phone, .contact-info .email, .contact-info .footer-icons {
+        padding: 10px;
+        margin: auto;
+    }
+    svg#play-youtube {
+        margin: 0px 20px 0px 0px;
+    }
    .buttons {
     display: block;
    }
    .demo-btn, .learn-btn {
     font-size: 14px;
-    padding: 10px 20px;
     
    }
-
    .footer {
     font: bold 14px sans-serif;
    }
@@ -269,6 +347,9 @@
     }
     .footer .footer-center i {
        margin-left: 0;
+    }
+    .form-container {
+        padding: 100px 20px;
     }
 }
 
@@ -283,7 +364,7 @@
         font-size: 28px;
     }
     .demo-btn {
-        padding: 10px;
+        margin-top: 20px;
     }
     .screens-cont {
         margin: 50px 30px;
@@ -319,6 +400,9 @@
     .fdb-row {
         display: block;
     }
+    .partner-row {
+        margin: 50px auto;
+    }
     .partner-row .clients .clients-row {
         margin: 100px 10px;
         grid-template-columns: repeat(1, 1fr);
@@ -327,12 +411,29 @@
     .team {
         margin: 50px 0px;
     }
+    .team-wrap {
+        margin: 0 auto;
+    }
+    .person_1{
+        padding: 20px 0px 20px 0px;
+        margin: auto;
+    }
+    .person_2{
+        padding: 20px 0px 20px 0px;
+    }
+    .person_1 img, .person_2 img {
+        width: 94px;
+    }
     .about-us {
         margin: 50px 70px;
     }
-    .team-wrap {
-        margin: 50px 100px;
+    .contact-info {
+        padding: 50px 50px 0 50px;
     }
+    .contact-info .phone, .contact-info .email, .contact-info .footer-icons {
+        padding: 20px 60px 20px 0px;
+    }
+    
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
@@ -383,6 +484,7 @@
     }
     .fdb-1, .fdb-2 {
         width: 392px;
+        margin: 20px auto;
     }
     .partner-row {
         margin: 100px 0px;
@@ -395,10 +497,19 @@
         margin: 50px 30px;
     }
     .team {
-        margin: 0px 100px;
+        margin: 0px;
     }
     .team-wrap {
-        margin: 50px 120px;
+        margin: auto;
+    }
+    .person_1, .person_2 {
+        padding: 20px 0px 20px 0px;
+    }
+    .contact-info {
+        padding: 50px 100px;
+    }
+    .contact-info .phone, .contact-info .email, .contact-info .footer-icons {
+        padding: 20px 60px 20px 0px;
     }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1350px) {
@@ -444,7 +555,16 @@
         margin: 50px 100px 30px;
     }
     .team-wrap {
-        margin: 50px 180px;
+        margin: 50px 0px;
+    }
+    .person_1, .person_2 {
+        padding: 50px 65px;
+    }
+    .contact-info {
+        padding: 50px 100px;
+    }
+    .contact-info .phone, .contact-info .email, .contact-info .footer-icons {
+        padding: 50px;
     }
 
 }
@@ -456,7 +576,11 @@
     .features-row {
         padding: 0 50px 0 70px;
     }
+    .contact-info {
+        padding: 50px 100px;
+    }
 }
+
 @media only screen and (min-width: 1451px) {
     .screens-cont {
         margin: 100px 50px 100px 200px;

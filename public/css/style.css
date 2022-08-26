@@ -182,12 +182,19 @@ svg#play {
     cursor: pointer;
     transform-origin: 50% 50%;
 }
-svg#play #triangle {
+svg#play-youtube {
+    width: 60px;
+    margin: 70px 20px;
+    display: block;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+}
+svg#play #triangle, svg#play-youtube #triangle {
     fill:rgba(22,22,22,0);
     transition:500ms;
     transform-origin: 50% 50%;
 }
-svg#play:hover #triangle {
+svg#play:hover #triangle, svg#play-youtube:hover #triangle  {
     fill:#7571f9;
     transform-origin: 50% 50%;
 }
