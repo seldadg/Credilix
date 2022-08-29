@@ -31,13 +31,13 @@ app.post('/', (req, res) => {
   `;
 
   const transporter = nodemailer.createTransport({
-    host: 'cp2.host2.bg',
+    host: '******',
     port: 587,
     secure: false, // true for 465, false for other ports
     // security: STARTTLS,
     auth: {
-        user: 'info@credilix.com', 
-        pass: 'M9v8baoybc'
+        user: '******', 
+        pass: '******'
     },
     // tls:{
     //   rejectUnauthorized:false
@@ -46,7 +46,7 @@ app.post('/', (req, res) => {
 
   const mailOptions = {
       from: req.body.email,
-      to: 'info@credilix.com',
+      to: '******',
       subject: 'Ново съобщение',
       message: req.body.message,
       html: output 
